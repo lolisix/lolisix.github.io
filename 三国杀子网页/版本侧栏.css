@@ -1,0 +1,20 @@
+div#版本侧栏
+{
+    position: absolute;
+    top:40%;
+    right: 0%;
+    font-size: 1.5em;
+}
+div#版本侧栏>a>p
+{
+    padding: 0.5em;
+    border-style: solid
+}
+div#版本侧栏>a:visited 
+{
+    color:black;
+}
+div#版本侧栏>a:link 
+{
+    text-decoration:none;
+}

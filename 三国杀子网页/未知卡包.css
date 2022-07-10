@@ -1,0 +1,10 @@
+p.图片星
+{
+    width: 200px;
+    outline-style: double;
+    outline-color: red;
+    font-size: 20px;
+    text-align: center;
+    padding:100px 0px;
+    display: inline-block;
+}
