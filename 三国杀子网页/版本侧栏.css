@@ -1,6 +1,6 @@
 div#版本侧栏
 {
-    position: relative;
+    position: fixed;
     top:40%;
     right: 0%;
     font-size: 1.5em;
