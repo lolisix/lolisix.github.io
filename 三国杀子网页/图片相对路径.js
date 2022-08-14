@@ -21,6 +21,8 @@ function 图床函数(网站, 参数1)//
                 return 'https://raw.githubusercontent.com/lolisix/wujiangB1-2/main/';
             case "武将B3":
                 return 'https://raw.githubusercontent.com/lolisix/wujiangB3/main/';
+            case "":
+                return 'https://raw.githubusercontent.com/lolisix/Sanguoshatuchuang/main/'
             default:
                 window.alert(参数1错误)
                 return '';
@@ -38,6 +40,8 @@ function 图床函数(网站, 参数1)//
                 return 'file:///E://个人主页/三国杀民间扩展包/武将B1-2/';
             case "武将B3":
                 return 'file:///E://个人主页/三国杀民间扩展包/武将B3/';
+            case "":
+                return 'file:///E://个人主页/三国杀民间扩展包/'
             default:
                 window.alert(参数1错误)
                 return '';
