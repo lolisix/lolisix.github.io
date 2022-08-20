@@ -5,7 +5,7 @@
 <base href="https://lolisix.github.io/三国杀子网页/"/>
 <title>三国杀民间扩展包汇总</title>
 <style>
-p{text-indent: 2em;}
+p{text-indent: 4em;}
 code{background-color: rgba(155, 155, 155, 0.171);}
 code::before{content: " "; white-space: pre;}
 code::after{content: " "; white-space: pre;}
@@ -16,11 +16,12 @@ code::after{content: " "; white-space: pre;}
 <p>
     这里我将收录一些三国杀民间扩展包, 他们的下载连接可以见蓝奏云(最近更新时间:2022年6月份左右):
     <b>外链:<a href="https://lolisix.lanzouf.com/b01vg0xvi" target="_blank" rel="noopener noreferrer">https://lolisix.lanzouf.com/b01vg0xvi</a> 密码:gsep </b>. 
-    蓝奏云中的压缩包解压后, 会有下面三种图片后缀:
+    蓝奏云中的压缩包解压后, 会有下面几种图片后缀:
     <ul>
         <li>其中<code>.jpg</code>格式的是从扫描版上裁剪下来的图或是从视频中截取下来的图, </li>
         <li> <code>_HD.jpg</code>是先针对卡牌的问题进行预处理, 再使用<a href="https://www.52/pojie.cn/thread-1600733-1-1.html" target="_blank" rel="noopener noreferrer">模糊老照片人像高清修复小工具 </a>进行高清修复, 再使用格式工厂进行初步压缩后的图片, </li>
         <li><code>_HD_C.jpg</code>是对<code>_HD.jpg</code>的图片用<a href="https://www.52pojie.cn/thread-1136878-1-1.html" target="_blank" rel="noopener noreferrer">Caesium Portable</a>将图片质量改为70%后进行压缩的图片(肉眼几乎看不出压缩前与压缩后区别).</li>
+        <li><code>_HD_CC.png</code>是对<code>_HD_C.jpg</code>的图片用PS将图片扣为透明背景, 再使用<a href="https://tinypng.com/">TinyPNG</a>网站进行压缩, 而后得到的结果.此种类型的图片全名只能是<code>标记汇总_HD_CC.png</code></li>
     </ul>
 </p>
 <p>
@@ -34,10 +35,10 @@ code::after{content: " "; white-space: pre;}
     <ol>
     <li>卡牌上出现彩色纹. 可以使用PS中的<code>滤镜-杂色-减少杂色</code>来转化为黑白纹.</li>
     <li>卡牌上出现黑白纹. 可以多次使用PS中的<code>滤镜-杂色-去斑</code>来消除.</li>
-    <li>卡牌上的任何物体产生扭曲, 尤其以文字明显.</li>
+    <li>卡牌上的任何物体产生扭曲, 尤其以文字明显. 暂无解决方法.</li>
     <li>卡牌上出现十字网格与白色圆点. 可以多次使用PS中的<code>滤镜-杂色-蒙尘与划痕</code>并配合<code>矢量蒙版</code>来消除.</li>
     </ol>
-    如果谁能帮我用其他方法修复, 也请在github上面联系我.
+    如果谁可以帮我用其他方法批量修复图片上这几种问题, 也请在github上面联系我.
 </p>
 <p>
     当一个卡包里的卡牌有多个版本时, 网页最右侧会出现"版本侧栏". 当前页面的版本的颜色是红色的. 默认进入的页面是最新版本的页面.

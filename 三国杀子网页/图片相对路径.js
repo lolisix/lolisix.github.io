@@ -9,8 +9,8 @@ function 图片相对路径(默认路径)//
 
 function 图床函数(网站, 参数1)//
 {
-    if(网站="github")//
-    {
+    if(网站=="github")//
+    {   
         switch(参数1)//
         {
             case "手牌": 
@@ -28,7 +28,7 @@ function 图床函数(网站, 参数1)//
                 return '';
         }
     }
-    else if(网站="file")//
+    else if(网站=="file")//
     {
         switch(参数1)//
         {
