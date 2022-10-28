@@ -1,0 +1,274 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>收藏夹内容</title>
+<style>
+    div#侧栏
+    {
+        position: fixed;
+        top:10%;
+        bottom: 10%;
+        right: 0%;
+        font-size: 1.2em;
+        overflow:auto;
+    }
+    div#侧栏 tbody
+    {
+        border-style: solid;
+        display: block;
+        margin:0.2em;
+    }
+    div#侧栏 a
+    {
+        display: inline-block;
+        padding:0.5em;
+        color:black;
+        /* text-align: center; */
+        text-decoration:none;
+    }
+    div#侧栏 a:visited 
+    {
+        color:black;
+    }
+    a
+    {
+        /* 手形光标 */
+        cursor:pointer;
+    }
+
+</style>
+</head>
+    
+<body onload="初始化()">
+
+    <div id="侧栏">
+        <table>
+            <tbody>
+                <tr><td onclick="操作子栏('数学相关_子栏')"><a>数学相关</a></td></tr>
+                <tr><td  id="数学相关_子栏">
+                    <table>
+                        <tbody>
+                        <tr><td><a href="#各个人的个人博客">个人博客汇总</a></td></tr>
+                        <tr><td><a href="#维基或论坛">维基或论坛</a></td></tr>
+                        <tr><td><a href="#教程或文章">教程或文章</a></td></tr>
+                        <tr><td><a href="#数学工具">数学工具</a></td></tr>
+                        </tbody>
+                    </table>
+                </td></tr>
+            </tbody>
+            <tbody>
+                <tr><td onclick="操作子栏('代码与编程_子栏')"><a>代码与编程</a></td></tr>
+                <tr><td  id="代码与编程_子栏">
+                    <table>
+                        <tbody>
+                        <tr><td><a href="#工具">工具</a></td></tr>
+                        <tr><td><a href="#unicode">unicode</a></td></tr>
+                        <tr><td><a href="#mathematica">mathematica</a></td></tr>
+                        <tr><td><a href="#matlab">matlab</a></td></tr>
+                        <tr><td><a href="#R">R</a></td></tr>
+                        <tr><td><a href="#C">C</a></td></tr>
+                        <tr><td><a href="#C++">C++</a></td></tr>
+                        <tr><td><a href="#SQL">SQL</a></td></tr>
+                        <tr><td><a href="#git">git</a></td></tr>
+                        <tr><td><a href="#Javascript">Javascript</a></td></tr>
+                        <tr><td><a href="#TeX">TeX</a></td></tr>
+                        </tbody>
+                    </table>
+                </td></tr>
+            </tbody>
+            <tbody>
+                <tr><td><a href="#汉字相关">汉字相关</a></td></tr>
+            </tbody>
+            <tbody>
+                <tr><td><a href="#其他学术相关">其他学术相关</a></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1 id="游戏相关">游戏相关</h1>
+    <h2 id="模拟器游戏论坛/通用游戏论坛">模拟器游戏论坛/通用游戏论坛</h2>
+    <p><a href="https://bbs.zhujiyou.com/forum.php">机友游戏社区</a> , 机友游戏社区.</p>
+    <p><a href="https://bbs.saraba1st.com/2b/forum.php">stage1/s1 游戏动漫论坛</a> , stage1/s1 游戏动漫论坛.</p>
+    <p><a href="http://forum.slieny.com/">翼风综合社区</a> , 翼风综合社区.</p>
+    <p><a href="https://www.91tvg.com/index.php">核心玩家的集中营 任天堂 微软 索尼三大游戏主机的论坛</a> , 核心玩家的集中营 任天堂 微软 索尼三大游戏主机的论坛.</p>
+    <p><a href="https://www.oldmanemu.net/">老男人游戏网 | OldmanEmu.net</a> ,老男人游戏网.</p>
+    <p><a href="https://geelaw.blog/">Gee Law’s Blog</a> , Gee Law的个人博客.</p>
+
+    <hr/>
+
+    <h1 id="数学相关">数学相关</h1>
+    <h2 id="各个人的个人博客">各个人的个人博客</h2>
+    <p><a href="https://www.ics.uci.edu/~eppstein/junkyard/">The Geometry Junkyard</a> , David Eppstein的网站.</p>
+    <p><a href="http://www.wqxwjf.com/">无穷小微积分</a> , 北大袁萌.</p>
+    <p><a href="https://www.changhai.org/">卢昌海个人主页</a> , 卢昌海个人主页.</p>
+    <p><a href="https://ccjou.wordpress.com/">線代啟示錄</a> , 周志成的个人网站.</p>
+    <p><a href="https://spaces.ac.cn/">科学空间</a> ,几乎相当于苏剑林的个人网站.</p>
+    <p><a href="https://geelaw.blog/">Gee Law’s Blog</a> , Gee Law的个人博客.</p>
+
+    <h2 id="维基或论坛">维基或论坛</h2>
+    <p><a href="https://googology.fandom.com/zh/wiki/大數學_維基">大数学维基</a> , 专门收集大数表示法的维基.</p>
+    <p class="问题网页"><a href="http://specialfunctionswiki.org/index.php/Main_Page">特殊函数维基</a> , 专门收集特殊函数的维基, <strong>打不开了</strong>.</p>
+    <p><a href="https://chaoli.club/index.php/">超理论坛</a> , 与各种理科相关的论坛, 不只是数学的论坛.</p>
+    <p><a href="https://math.stackexchange.com/">Mathematics Stack Exchange</a> , 国外的数学相关题目的解答区.</p>
+    <p><a href="http://www.fxysw.com/">分形艺术网</a> , 只是创作各种分形的网站, 不涉及分形的性质.</p>
+    <p><a href="https://geelaw.blog/">Gee Law’s Blog</a> , Gee Law的个人博客.</p>
+
+    <h2 id="教程或文章">教程或文章</h2>
+    <p><a href="https://stepstowardinfinity.wordpress.com/">Steps Toward Infinity!</a> , 与大数学表示法入门相关的教程.</p>
+    <p><a href="https://sites.google.com/site/largenumbers/home">Large Numbers</a> , 与大数学表示法入门相关的文章, 似乎没有写完.</p>
+    <p><a href="https://sites.google.com/view/aarexgoogology/aan/epaan">Aarex's Googology - epAAN</a> , 一种大数表示法, 似乎没写完.</p>
+    <p><a href="https://usakochan.net/files/ebook.php?id=xsnBDwAAQBAJ&item=Approximation%20Theory%20and%20Approximation%20Practice%20%20Extended%20Edition">Approximation Theory and Approximation Practice, Extended Edition</a> , 一本我很想要的书, 是关于数值估计的.</p>
+    <p><a href="https://web.math.sinica.edu.tw/mathmedia/">數學傳播</a> , 疑似是一本与数学有关的期刊.</p>
+    <p><a href="https://blog.atcg.cc/2021/01/07/LaplaceTransformation/">拉普拉斯变换及反演</a> , 拉普拉斯变换相关的简单知识的汇总.</p>
+    <p><a href="https://en.wikipedia.org/wiki/Bring_radical">Bring radical</a> , 里面涉及了一种高次方程的超几何求根公式.</p>
+    <p><a href="https://www.cnblogs.com/misaka01034/p/BaselProof.html">巴塞尔问题的多种解法</a> , 巴塞尔问题的多种解法.</p>
+    <p><a href="https://jingyan.baidu.com/article/359911f58df5a057fe030602.html">方向导数的存在性及其与偏导数和全微分的关系</a> , 方向导数的存在性及其与偏导数和全微分的关系.</p>
+    <p><a href="https://www.jianshu.com/p/10908f5378ca">矩阵分解</a> , 矩阵的各种常用分解简述.</p>
+    <p><a href="https://mathworld.wolfram.com/PadeApproximant.html">Padé Approximant</a> , 帕德展开介绍.</p>
+    <p><a href="http://www.matrix67.com/blog/archives/4984">几乎所有有理数都是无理数的无理数次方</a> , 几乎所有有理数都是无理数的无理数次方.</p>
+    <p><a href="http://www.matrix67.com/blog/archives/3951">原来函数也是有平方根的</a> , 函数的"平方根"的寻找法.</p>
+    <p><a href="https://zh.wikipedia.org/wiki/双重根号">双重根号化简法</a> , 双重根号化简法.</p>
+    <p><a href="https://www.doc88.com/p-7022531402550.html?r=1">以3度为分度值的整数三角函数的根号表示法</a> , 以3度为分度值的整数三角函数的根号表示法.</p>
+    <p><a href="https://mathworld.wolfram.com/topics/SpecialNumbers.html">Special Numbers  特殊数字</a> , 介绍了一些特殊数字.</p>
+    <p><a href="http://eslpower.org/chains.htm">Multigrade Chains幂等链</a> , Multigrade Chains幂等链.</p>
+    <p><a href="https://zh.wikipedia.org/wiki/凯莱-迪克森结构">凯莱-迪克森结构</a> , 这是复数与四元数的推广的简述.</p>
+    <p><a href="https://m.fx361.com/news/2021/0507/8310846.html">高阶常系数非齐次线性微分方程的算子法</a> , 高阶常系数非齐次线性微分方程的算子法.</p>
+    <p><a href="https://www.docin.com/p-773832179.html">常系数非齐次线性差分方程的算子解法</a> , 常系数非齐次线性差分方程的算子解法.</p>
+
+    <h2 id="数学工具">数学工具</h2>
+    <p><a href="https://zh.numberempire.com/">数字帝国</a> , 常用运算汇总.</p>
+    <p><a href="http://www.matrixcalculus.org/">矩阵求导计算器</a> , 可以用来求解一些简单的矩阵相关的导数.</p>
+    <p><a href="https://www.sagemath.org/index.html">SageMath</a> , 一个开源的数学软件计算系统.</p>
+    <p><a href="https://oeis.org/?language=chinese">整數數列線上大全</a> , 里面收集了各种知名的整数数列, 网站也有部分关于这些数列的研究成果.</p>
+    <p><a href="http://wayback.cecm.sfu.ca/projects/ISC/ISCmain.html">Inverse Symbolic Calculator</a> , 没有用过, 暂时不清楚是做什么用的.</p>
+    <p><a href="https://erich-friedman.github.io/numbers.html">What's Special About This Number?</a> , 简单地介绍了部分数字的特殊性.</p>
+
+    <hr/>
+
+    <h1 id="代码与编程">代码与编程</h1>
+    <p><a href="https://esolangs.org/wiki/Main_Page">esolangs</a> , 里面有各种编程语言的介绍.</p>
+    <p><a href="https://www.luogu.com.cn/">洛谷 | 计算机科学教育新生态</a> , 编程论坛.</p>
+    <p><a href="https://beza1e1.tuxen.de/articles/accidentally_turing_complete.html">意外的图灵完备性</a> , 具有图灵完备性的意外的事物.</p>
+
+    <h2 id="工具">工具</h2>
+    <p><a href="https://www.regexpal.com/">验证正则表达式</a> , 验证正则表达式.</p>
+    <p><a href="https://www.hellion.org.uk/cgi-bin/randmac.pl">Random MAC Address Generator</a> , 随机MAC地址生成.</p>
+    <p><a href="https://gitee.com/Barryda/QtScrcpy">QtScrcpy: Android实时投屏软件</a> , Android实时投屏软件.</p>
+    <p class="问题网页"><a href="https://github.com/CodFrm/cxmooc-tools">超星慕课小工具</a> , <strong>已失效</strong>.</p>
+    <p><a href="https://jukebox.openai.com/">Jukebox Sample Explorer</a> , 应该是一个与自动创建音乐有关的AI.</p>
+    <p><a href="https://www.topazlabs.com/gigapixel-ai">Gigapixel AI</a> , 应该是一个与图片相关的AI.</p>
+    <p><a href="http://hi.pcmoe.net/index.html">与熊论道|加密</a> , 加密信息的网页.</p>
+    <p><a href="https://gitee.com/Barryda/QtScrcpy">QtScrcpy: Android实时投屏软件</a> , Android实时投屏软件.</p>
+    <p><a href="https://www.bejson.com/">Bejson</a> , Bejson.</p>
+
+    <h2 id="unicode">unicode</h2>
+    <p><a href="https://unicode-table.com/cn/blocks/">unicode字符百科</a> , unicode字符百科.</p>
+    <p><a href="https://emojipedia.org/">绘文字百科</a> , 绘文字百科.</p>
+    <p><a href="https://blog.csdn.net/qq_25218903/article/details/70212448">特殊符号的unicode编码</a> , 特殊符号的unicode编码.</p>
+    <p><a href="https://www.ip138.com/teshufuhao/">特殊符号大全</a> , 特殊符号大全.</p>
+    <p><a href="https://www.qqxiuzi.cn/zh/unicode-zifu.php">unicode字符集</a> , unicode字符集.</p>
+    
+    <h2 id="mathematica">mathematica</h2>
+    <p><a href="https://chaoli.club/index.php/5300">Mathematica上的全自动不定积分过程生成器</a> , Mathematica上的全自动不定积分过程生成器.</p>
+    <p><a href="https://functions.wolfram.com/Constants/ComplexInfinity/introductions/Symbols/ShowAll.html">Wolfram中的∞符号的使用</a> , Wolfram中的∞符号的使用.</p>
+    <p><a href="https://tiebamma.github.io/InstallTutorial/">Mathematica激活指南</a> , Mathematica激活指南.</p>
+    <p><a href="http://www.mathcraft.org/wiki/index.php?title=Mathematica_编程：高级导论">Mathematica编程:高级导论</a> , mathematica的入门教程, 但是每章教程之间的联系不是很紧密.</p>
+    <p><a href="https://www.wolfram.com/language/fast-introduction-for-programmers/zh/">Wolfram 语言教程：快速编程入门</a> , Wolfram 语言教程的快速编程入门.</p>
+    <p><a href="https://mathpretty.com/category/mathematica/wolfram_advance/">Mathematica实用技巧</a> , Mathematica实用技巧.</p>
+    <p><a href="https://mmaqa.com/blog/collection/">Mathematica问答社区</a> , Mathematica问答社区.</p>
+    <p><a href="https://reference.wolfram.com/language/"> Wolfram 语言与系统 参考资料中心 </a> ,  Wolfram 语言与系统 参考资料中心.</p>
+    <p><a href="https://tiebamma.github.io/InstallTutorial/">Mathematica 激活指南</a> , Mathematica 激活指南.</p>
+
+    <h2 id="matlab">matlab</h2>
+    <p><a href="https://mathweb.ucsd.edu/~bdriver/21d-s99/matlab-primer.html">Matlab Primer</a> , 不清楚这是什么.</p>
+
+    <h2 id="R">R</h2>
+    <p><a href="https://www.biomart.cn/61929/news/2986666.htm">R语言绘图—基础图形参数整理</a> , R语言绘图的基础图形参数整理.</p>
+    <p><a href="https://zhuanlan.zhihu.com/p/98106680?ivk_sa=1024320u">【R语言】画图的参数</a> , R语言绘图的基础图形参数整理.</p>
+    <p><a href="https://blog.csdn.net/u013259893/article/details/40480699">R语言中的QR分解</a> , R语言中的QR分解.</p>
+    <p><a href="https://zhuanlan.zhihu.com/p/402290661">R语言|字符串处理之基础函数(stringr包)</a> , 与字符串有关的一个包.</p>
+    
+
+    <h2 id="C">C</h2>
+    <p><a href="http://c.biancheng.net/view/159.html">C语言printf格式控制符一览表</a> , C语言printf格式控制符一览表.</p>
+
+    <h2 id="C++">C++</h2>
+    <p><a href="https://cplusplus.com/">The C++ Resources Network</a> , 这是C++的论坛吗?</p>
+
+    <h2 id="SQL">SQL</h2>
+    <p><a href="https://www.1keydata.com/cn/sql/">SQL语句教程</a> , SQL语句教程.</p>
+
+    <h2 id="git">git</h2>
+    <p><a href="https://blog.csdn.net/u014028063/article/details/82455215">解决 git 中文路径显示 unicode 代码的问题</a> , 解决 git 中文路径显示 unicode 代码的问题.</p>
+    <p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">git简要教程</a> , git简要教程.</p>
+    <p><a href="https://limbopro.com/archives/3856.html">github新手指南</a> , github新手指南.</p>
+    <p><a href="https://blog.csdn.net/weixin_34067980/article/details/86026299">git忽略除指定文件/指定后缀名文件外的文件</a> , git忽略除指定文件/指定后缀名文件外的文件的方法.</p>
+    <p><a href="https://www.cnblogs.com/dev2007/p/13947333.html">多项目部署在同一个GitHub Pages</a> , 多项目部署在同一个GitHub Pages.</p>
+    <p><a href="https://blog.csdn.net/qq_43827595/article/details/100048727">【Git提交忽略文件】.gitignore语法规则详细说明</a> , gitignore语法规则详细说明.</p>
+
+    <h2 id="Javascript">Javascript</h2>
+    <p><a href="https://utf-8.jp/public/aaencode.html">将JavaScript语句转为颜文字</a> , 将JavaScript语句转为颜文字.</p>
+    <p><a href="http://zhaojiaoben.cn/">找脚本网</a> , 油猴插件的脚本网之一.</p>
+    <p><a href="https://bbs.tampermonkey.net.cn/forum.php">油猴中文网 </a> , 油猴插件的脚本网之一.</p>
+    <p><a href="http://www.360doc.com/content/14/0521/00/52602_379493726.shtml">书签脚本</a> , 书签脚本.</p>
+    <p><a href="https://utf-8.jp/public/aaencode.html">将JavaScript语句转为颜文字</a> , 将JavaScript语句转为颜文字.</p>
+
+    <h2 id="TeX">TeX</h2>
+    <p><a href="https://liam.page/2014/09/08/latex-introduction/">一份其实很短的 LaTeX 入门文档 | 始终</a> , LaTeX入门.</p>
+    <p><a href="https://qa.1r1g.cn/tex/ask/5954161/">在证明后换行</a> , 在证明环境后换行.</p>
+    <p><a href="https://blog.csdn.net/xovee/article/details/109254872">在 LaTeX 中插入表格</a> , 在 LaTeX 中插入各种表格.</p>
+    <p><a href="https://www.bilibili.com/read/cv5063678">TeX中的特殊字符</a> , TeX中的特殊字符.</p>
+    <p><a href="https://blog.csdn.net/tsroad/article/details/52006672">LateX正文与首页页眉线分别为单双线的设置方法</a> , LateX正文与首页页眉线分别为单双线的设置方法.</p>
+    <p><a href="https://github.com/CTeX-org/forum">CTeX临时论坛</a> , CTeX临时论坛.</p>
+    <p><a href="https://blog.csdn.net/virhuiai/article/details/7552505">TeX-长度与距离</a> , TeX中的长度与距离相关的命令.</p>
+    <p><a href="http://www.unkeltao.com/blog/2014/02/24/latex-table/">Latex 绘制跨页表格</a> , Latex 绘制跨页表格的方法.</p>
+    <p><a href="https://www.tablesgenerator.com/">TablesGenerator.com表格互转</a> , 各种代码之间的表格转换.</p>
+    <p><a href="https://tableconvert.com/csv-to-csv">Convert CSV to CSV表格互转</a> , 各种代码之间的表格转换.</p>
+    <p><a href="https://www.latexstudio.net/archives/51620.html">LaTeX 攻略之脚注常用技巧</a> , LaTeX 攻略之脚注常用技巧.</p>
+    <p><a href="https://math.ecnu.edu.cn/~jypan/Latex/index.html">LaTeX科技排版</a> , LaTeX科技排版.</p>
+    <p><a href="http://www.jhanmath.com/?p=205">表格自定义列类型 – 数学思绪</a> , 表格自定义列的方法.</p>
+
+    <hr/>
+
+    <h1 id="汉字相关">汉字相关</h1>
+    <p><a href="https://tool.mingdawoo.com/lang/nearby_word/">近邻词汇搜索</a> , 可以用于搜索与某个词相关的词组, 支持英文词组与中文词组.</p>
+    <p><a href="http://yedict.com/">字海网, 又名叶典网</a> , 收录汉字十分多的网站.</p>
+    <p><a href="https://dict.variants.moe.edu.tw/">教育部异体字字典</a> , 收录了许多汉字的来源, 并且可以更好地区分异体字与正字体, 由于是台湾的网站, 所以加载速度感人.</p>
+    <p><a href="https://zi.tools/">字统网</a> , 也收录了许多汉字的来源, 与教育部异体字字典相比, 加载速度正常.</p>
+    <p><a href="https://garywill.github.io/cc-visualize/">全文汉字关联字关系可视化</a> , 可以显示一篇文章的繁简汉字的转换以及汉字所在分区等功能.</p>
+    <p><a href="https://zh.wikipedia.org/wiki/繁簡轉換一對多列表">繁簡轉換一對多列表</a>、<a href="https://zh.wikipedia.org/wiki/簡繁轉換一對多列表">簡繁轉換一對多列表</a>  , 可以用来辅助学习繁简汉字的转换.</p>
+    <p class="问题网页"><a href="http://input.foruto.com/ccc/data/index.htm">中文字元資料頁：漢字資源</a> , <strong>打不开</strong>, 我也不知道这是什么.</p>
+    <hr/>
+
+    <h1 id="其他学术相关">其他学术相关</h1>
+    <p><a href="http://chemistrybydesign.oia.arizona.edu/app/">Chemistry By Design</a> , 可以用来查询一些有机物的结构与合成方法.</p>
+    <p><a href="http://www.chemexper.com/">chemexper</a> , 好像可以用来查找各种化工产品的供应商?</p>
+    <p><a href="https://www.allhistory.com/">全历史</a> , 里面有各个国家的简要历史.</p>
+    <p><a href="https://livestream.com/accounts/4931571/events/5369913/videos/127412432">沥青滴落实验的直播</a> , 沥青滴落实验的直播.</p>
+    <p><a href="https://fogcam.org/">最早的网络实时监控摄像头</a> , 自称的.</p>
+    <p><a href="https://quillbot.com/">Paraphrasing Tool | QuillBot AI</a> , 将英文文章中的低级词汇变成高级词汇的机器人.</p>
+    <p><a href="https://web.mit.edu/jorloff/www/chaosTalk/double-pendulum/double-pendulum-en.html">双摆可视化网站</a> , 双摆可视化网站.</p>
+    <p><a href="https://www.marxists.org/chinese/index.html">马克思主义中文文库</a> , 马克思主义中文文库.</p>
+    <p><a href="https://lernu.net/esperanto">世界语学习网站</a> , 世界语学习网站.</p>
+    <hr/>
+
+    <script>
+        function 操作子栏(子栏名)//
+        {
+            var 子栏位置 = document.getElementById(子栏名);
+                var 子栏格式状态 = 子栏位置.style.display;
+                
+                if(子栏格式状态 == "block")
+                    子栏位置.style.display = "none";
+                else
+                    子栏位置.style.display = "block";
+        }
+
+        function 初始化()//
+        {
+            document.getElementById('数学相关_子栏').style.display='none'
+            document.getElementById('代码与编程_子栏').style.display='none'
+        }
+    </script>
+</html>
