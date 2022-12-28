@@ -1,10 +1,23 @@
 p.图片星
 {
-    width: 200px;
+    width: 216px;
     outline-style: double;
     outline-color: red;
     font-size: 20px;
     text-align: center;
     padding:100px 0px;
     display: inline-block;
+}
+
+/* 封面外包围 */
+span.封面 
+{
+    height: 300px;
+    width: 216px;
+    display: inline-block;
+}
+img.图片 
+{
+    height: 300px;
+    width: 216px;
 }

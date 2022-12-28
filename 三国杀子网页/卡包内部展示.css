@@ -21,7 +21,33 @@ div#版本侧栏>a:link
 }
 
 /* 过长图片样式 */
-.长图片外框 {
+.长图片外框 
+{
     white-space: nowrap;
     overflow-x: scroll;
-  }
+}
+
+/* 图片外包围 */
+span.卡牌 
+{
+    height: 500px;
+    width: 360px;
+    display: inline-block;
+}
+span.横版卡牌 
+{
+    height: 360px;
+    width: 500px;
+    display: inline-block;
+}
+span.未知卡牌 
+{
+    height: 250px;
+    width: 180px;
+    display: inline-block;
+}
+div.长图片外框
+{
+    height:500px; 
+    width: 100%;
+}

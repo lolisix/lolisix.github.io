@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!-- <base href="https://lolisix.github.io/三国杀子网页/"/> -->
+<!-- <base href="./"/> -->
 <link rel="stylesheet" type="text/css" href="./未知卡包.css">
 <script src="./图片相对路径.js"></script>
 <script src="./调整顶部导航框长度.js"></script>
@@ -19,7 +19,7 @@
 <p>武将扩充-武将扩充:</p>  <br/>
 
 <br/>
-<a href="./武将扩充-武将扩充/洛神-同人CG特别篇.html"><img class="图片" src=""  data-路径="武将扩充-武将扩充/洛神-同人CG特别篇/卡包外盒_HD_C.jpg"  alt="洛神-同人CG特别篇" height="300px"/></a>
+<a href="./武将扩充-武将扩充/洛神-同人CG特别篇.html"><span class="封面"><img class="图片" src=""  data-路径="武将扩充-武将扩充/洛神-同人CG特别篇/卡包外盒_HD_C.jpg"  alt="洛神-同人CG特别篇" height="300px"/></span></a>
 
 <br/>
 <a href="./武将扩充-武将扩充/洛神-SP武将.html"><p class="图片星">洛神-SP武将</p></a>
@@ -58,8 +58,10 @@
 
 <script>
     function 启动函数()//
-    {  图片相对路径(图床函数("github", ""));
-       调整顶部导航框长度();
+    {     
+        默认位置()
+        图片相对路径(图床函数(auto, ""));
+        调整顶部导航框长度();
     }
 </script>
    

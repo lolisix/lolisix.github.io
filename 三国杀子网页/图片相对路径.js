@@ -28,23 +28,41 @@ function 图床函数(网站, 参数1)//
                 return '';
         }
     }
-    else if(网站=="file")//
+    else if(网站=="file"||网站=="files")//
     {
+        图片路径 = "file:///E://个人主页/";
         switch(参数1)//
         {
             case "手牌": 
-                return 'file:///E://个人主页/三国杀民间扩展包/手牌/';
+                return 图片路径 + '三国杀民间扩展包/手牌/';
             case "武将A":
-                return 'file:///E://个人主页/三国杀民间扩展包/武将A/';
+                return 图片路径 + '三国杀民间扩展包/武将A/';
             case "武将B1-2":
-                return 'file:///E://个人主页/三国杀民间扩展包/武将B1-2/';
+                return 图片路径 + '三国杀民间扩展包/武将B1-2/';
             case "武将B3":
-                return 'file:///E://个人主页/三国杀民间扩展包/武将B3/';
+                return 图片路径 + '三国杀民间扩展包/武将B3/';
             case "":
-                return 'file:///E://个人主页/三国杀民间扩展包/'
+                return 图片路径 + '三国杀民间扩展包/'
             default:
                 window.alert(参数1错误)
                 return '';
         }
+    }
+}
+
+function 默认位置()//
+{  
+    if(是否包含( decodeURI(window.location.href), "file:///" ))
+    {  
+        auto = "file";
+    }
+    else
+    {
+        auto = "github";
+    }
+
+    function 是否包含(字符串, 子字符串)//
+    {   
+        return new RegExp(子字符串).test(字符串);
     }
 }
