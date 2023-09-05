@@ -13,7 +13,7 @@ function 图床函数(网站, 参数1)//
     {   
         switch(参数1)//
         {
-            case "手牌": 
+            case "游戏牌": 
                 return 'https://raw.githubusercontent.com/lolisix/shoupai/main/';
             case "武将A":
                 return 'https://raw.githubusercontent.com/lolisix/wujiangA/main/';
@@ -33,14 +33,14 @@ function 图床函数(网站, 参数1)//
         图片路径 = "file:///E://个人主页/";
         switch(参数1)//
         {
-            case "手牌": 
-                return 图片路径 + '三国杀民间扩展包/手牌/';
-            case "武将A":
-                return 图片路径 + '三国杀民间扩展包/武将A/';
-            case "武将B1-2":
-                return 图片路径 + '三国杀民间扩展包/武将B1-2/';
-            case "武将B3":
-                return 图片路径 + '三国杀民间扩展包/武将B3/';
+            case "游戏牌": 
+                return 图片路径 + '三国杀民间扩展包/游戏牌/';
+            case "武将牌A":
+                return 图片路径 + '三国杀民间扩展包/武将牌A/';
+            case "武将牌B1-2":
+                return 图片路径 + '三国杀民间扩展包/武将牌B1-2/';
+            case "武将牌B3":
+                return 图片路径 + '三国杀民间扩展包/武将牌B3/';
             case "":
                 return 图片路径 + '三国杀民间扩展包/'
             default:
